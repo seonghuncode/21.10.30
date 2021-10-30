@@ -1,0 +1,142 @@
+package 자바1수업;
+
+import java.util.Scanner;
+
+public class 자바1_컴파일_연습란 {
+	/*
+	static void save_print(int cnt, String save[]) {  //메서드 안에 반복문이 돌기 위해서는 cnt, save가 무엇인지 알려주어야 한다.
+		System.out.println("현재 저장 되어 있는 값 : ");
+		System.out.println("=======================");
+		for(int i = 0; i < cnt; i++) {
+			System.out.println( (i + 1) + "." + save[i]);
+			
+		}
+		System.out.println("========================");
+	}
+	*/
+	
+
+	
+	
+	//------------------------------------------------main메서드-------------------------------------------------------
+	
+	
+	public static void main(String[] args) {
+		
+		//데이터 관리 프로그램, 로또 프로그램, git연습, ArrayList복습
+		
+		//데이터 관리 프로그램-------------------------------------------------------------------------------------------------
+		
+
+		/*
+	    명령어를 입력해주세요 : 2
+	    1. 데이터 저장
+			2. 데이터 조회
+			3. 데이터 수정
+			4. 데이터 삭제
+	    5. 종료
+	    현재 저장되어 있는 값 : 
+	    =============
+	    1. hi
+	    2. bye
+	    =============
+	    명령어를 입력해주세요 : 4
+	    1. 데이터 저장
+			2. 데이터 조회
+			3. 데이터 수정
+			4. 데이터 삭제
+	    5. 종료
+	    =============
+	    1. hello 
+	    2. bye
+	    =============
+	    몇번 데이터를 삭제하시겠습니까 : 2
+	    bye 이/가 삭제되었습니다.
+	    명령어를 입력해주세요 : 2
+	    1. 데이터 저장
+			2. 데이터 조회
+			3. 데이터 수정
+			4. 데이터 삭제
+	    5. 종료
+	    현재 저장되어 있는 값 : 
+	    =============
+	    1. hi
+	    =============   
+
+	*
+	*/
+		
+		/*
+		String[] save = new String[15]; //저장할 내용이 숫자인지 문자인지 헷갈리지 않기!!!!(String, int, double)
+		int cnt = 0;   //또한 저장 할 값은 while 지역 변수 밖에 빼놓아야 한다. while문 안에 넣을시 계속 반복 되어 저장X
+		
+		while(true) {
+			
+			System.out.println("==============================");
+			System.out.println("menu를 보고 싶으면 0을 눌러 주세요");
+			System.out.print("명령어를 입력해 주세요 : ");
+			System.out.println();
+			System.out.println("==============================");
+			Scanner sc = new Scanner (System.in);
+			int menu = Integer.parseInt(sc.nextLine());
+			
+						
+			if (menu == 1) {
+				System.out.println("[ 데이터 저장 ]");
+				System.out.print("저장할 값을 입력헤 주세요 : ");
+				
+					save[cnt] = sc.nextLine();                 
+					System.out.println(save[cnt] + "이/가 저장 되었습니다.");
+					cnt++;
+				
+			}
+			else if(menu == 2) {
+				System.out.println("[ 데이터 조회 ]");
+				save_print(cnt, save); //cnt, save로 받아 주어야 한다???
+			}
+			
+			else if(menu == 3) {
+				System.out.println("[ 데이터 수정 ]");
+				save_print(cnt, save);
+				System.out.print("몇번 데이터를 수정 하시겠습니까 : ");
+				int sel = Integer.parseInt(sc.nextLine());
+				System.out.print("어떤 값으로 수정 하시겠습니까 : ");
+				save[sel - 1] = sc.nextLine();
+				System.out.println(save[sel - 1] + "로 값이 수정 되었습니다.");
+				
+			}
+			else if(menu == 4) {
+				System.out.println("[ 데이터 삭제 ]");
+				save_print(cnt, save);
+				System.out.print("몇 번 데이터를 삭제 하시겠씁니까 : ");
+				int del = Integer.parseInt(sc.nextLine());
+				System.out.println(save[del - 1] + "이/가 삭제 되었습니다.");
+				for(int i = del - 1; i < save.length - 1; i++ ) {
+					save[i] = save[i + 1];
+				}
+				
+				cnt--;
+				
+				
+			}
+			else if(menu == 5) {
+				System.out.println("[ 종  료 ]");
+			}
+			else if(menu == 0) {
+				System.out.println("1. 데이터 저장");
+				System.out.println("2. 데이터 조회");
+				System.out.println("3. 데이터 수정");
+				System.out.println("4. 데이터 삭제");
+				System.out.println("5. 종료");
+			}
+			
+			
+		}
+		*/
+		
+		
+		
+		
+	}
+
+}
